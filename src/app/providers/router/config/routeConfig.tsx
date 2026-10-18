@@ -11,7 +11,6 @@ import { HabitStatisticsPage } from '@pages/habit-statistics';
 import { ROUTES, type AppRouteKey } from '@shared/lib/router';
 import { ModalLayout } from '@shared/ui';
 import { StorageInfoPage } from '@pages/storage-info';
-import { SupportPage } from '@pages/support';
 
 /**
  * Individual route definitions for modal sub-pages.
@@ -52,10 +51,6 @@ export const modalChildRoutes: Record<AppRouteKey, RouteObject> = {
 	STORAGE_INFO: {
 		path: ROUTES.STORAGE_INFO,
 		element: <StorageInfoPage />
-	},
-	SUPPORT: {
-		path: ROUTES.SUPPORT,
-		element: <SupportPage />
 	}
 };
 

@@ -13,6 +13,5 @@ export const ROUTES = {
 	HABIT_EDITOR: 'habit-editor',
 	MENU: 'menu',
 	STATISTICS: 'habit-statistics',
-	STORAGE_INFO: 'menu/data-management/storage-info',
-	SUPPORT: 'menu/support'
+	STORAGE_INFO: 'menu/data-management/storage-info'
 } as const;

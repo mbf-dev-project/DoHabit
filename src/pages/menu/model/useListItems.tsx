@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { HiArchiveBox } from 'react-icons/hi2';
-import { FaAward, FaBug, FaGithub, FaHeart, FaPaintBrush, FaUser } from 'react-icons/fa';
+import { FaAward, FaBug, FaGithub, FaPaintBrush, FaUser } from 'react-icons/fa';
 import { BsFillDatabaseFill } from 'react-icons/bs';
 import { UserProfileForm, useUserStore } from '@entities/user';
 import { getNavigationTarget } from '@shared/lib/router';
@@ -72,16 +72,6 @@ function useListItems() {
 	];
 
 	const supportItems: ListItemProps[] = [
-		{
-			icon: FaHeart,
-			iconProps: { color: '#e14f96' },
-			title: t('menu.shared.support.title'),
-			description: t('menu.shared.support.desc'),
-			...getNavigationTarget('SUPPORT', {
-				modalTitle: t('menu.shared.support.title')
-			}),
-			indicator: { type: 'arrow' }
-		},
 		{
 			icon: FaGithub,
 			iconProps: { color: '#7fc7ff' },

@@ -1,0 +1,5 @@
+{
+  "name": "DoHabit",
+  "description": "Build lasting habits with zero friction. DoHabit is a minimalist, offline tracker with progress charts and a personal habit journal.",
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
