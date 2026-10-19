@@ -2,16 +2,16 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	min-height: 100vh;
+	max-height: 100vh;
 	overflow: hidden;
-	outline-offset: -2px;
+	background: #0f0f12;
 }
 
 .content {
 	position: relative;
 	flex: 1;
-	padding-inline: var(--app-inline-padding);
-	padding-top: var(--header-height);
-	padding-bottom: var(--app-bottom-padding);
+	padding: 14px 16px 40px;
 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }

@@ -1,0 +1,250 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding-bottom: 30px;
+}
+
+/* Read-Only Info Notice */
+.readOnlyNotice {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	background: rgba(212, 175, 55, 0.08);
+	border: 1px solid rgba(212, 175, 55, 0.25);
+	border-radius: 14px;
+	padding: 12px 14px;
+}
+
+.noticeIcon {
+	color: #d4af37;
+	font-size: 18px;
+	flex-shrink: 0;
+}
+
+.noticeText {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.noticeTitle {
+	font-size: 13px;
+	font-weight: 700;
+	color: #f7f7f8;
+}
+
+.noticeSubtitle {
+	font-size: 11px;
+	color: #a0a0a8;
+	line-height: 1.4;
+}
+
+/* Days Navigation */
+.daysNav {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 6px;
+	background: #151518;
+	padding: 6px;
+	border-radius: 14px;
+	border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dayBtn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	padding: 8px 4px;
+	border-radius: 10px;
+	border: none;
+	background: transparent;
+	color: #8e8e98;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.dayLabel {
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.dayNum {
+	font-size: 14px;
+	font-weight: 800;
+	color: #fff;
+}
+
+.dayBtnActive {
+	background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+	color: #000;
+	box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
+}
+
+.dayBtnActive .dayLabel,
+.dayBtnActive .dayNum {
+	color: #000;
+}
+
+/* Category Filters */
+.categoryFilters {
+	display: flex;
+	gap: 8px;
+	overflow-x: auto;
+	padding-bottom: 2px;
+}
+
+.filterPill {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	background: #1a1a1f;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	color: #a0a0a8;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 6px 12px;
+	border-radius: 20px;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: all 0.2s ease;
+}
+
+.filterPillActive {
+	background: rgba(212, 175, 55, 0.15);
+	border-color: #d4af37;
+	color: #d4af37;
+	font-weight: 700;
+}
+
+/* Classes Feed (Read-Only) */
+.classesList {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.classCard {
+	background: #16161a;
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.06);
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	transition: border-color 0.2s ease;
+}
+
+.cardTop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.timeBadge {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 13px;
+	font-weight: 800;
+	color: #f7f7f8;
+}
+
+.intensityBadge {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 10px;
+	font-weight: 800;
+	letter-spacing: 0.5px;
+	padding: 3px 8px;
+	border-radius: 6px;
+	background: rgba(239, 68, 68, 0.15);
+	color: #f87171;
+	border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.cardMain {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.classTitle {
+	font-size: 16px;
+	font-weight: 800;
+	color: #ffffff;
+	margin: 0;
+}
+
+.classDetails {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+}
+
+.detailRow {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 12px;
+	color: #a0a0a8;
+}
+
+.detailIcon {
+	color: #d4af37;
+	font-size: 12px;
+}
+
+.cardBottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.spotsInfo {
+	font-size: 12px;
+	color: #8e8e98;
+}
+
+.spotsCount strong {
+	color: #d4af37;
+}
+
+.spotsFull {
+	color: #ef4444;
+	font-weight: 700;
+}
+
+.readOnlyBadge {
+	font-size: 11px;
+	font-weight: 600;
+	color: #a0a0a8;
+	background: rgba(255, 255, 255, 0.05);
+	padding: 4px 10px;
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.emptyState {
+	background: #151518;
+	padding: 36px 20px;
+	border-radius: 16px;
+	text-align: center;
+	color: #8e8e98;
+	font-size: 13px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.emptyIcon {
+	font-size: 24px;
+	color: #555560;
+}

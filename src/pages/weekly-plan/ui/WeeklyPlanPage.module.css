@@ -1,0 +1,272 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding-bottom: 30px;
+}
+
+/* 1. Weekly Target Dashboard */
+.planSection {
+	background: #151518;
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.06);
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.planHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.planTitleBox {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.fireIcon {
+	color: #d4af37;
+	font-size: 22px;
+}
+
+.planTitleBox h2 {
+	font-size: 15px;
+	font-weight: 800;
+	color: #f7f7f8;
+	margin: 0;
+}
+
+.planSubtitle {
+	font-size: 11px;
+	color: #8e8e98;
+}
+
+.metricsRow {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+}
+
+.planMetricCard {
+	background: #1b1b20;
+	border-radius: 12px;
+	padding: 10px 10px 12px;
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.metricHeader {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.metricName {
+	font-size: 11px;
+	font-weight: 700;
+	color: #a0a0a8;
+}
+
+.metricIconBoxing {
+	color: #d4af37;
+	font-size: 14px;
+}
+
+.metricIconStrength {
+	color: #94a3b8;
+	font-size: 12px;
+}
+
+.metricIconCardio {
+	color: #ef4444;
+	font-size: 12px;
+}
+
+.metricVal {
+	font-size: 11px;
+	color: #8e8e98;
+}
+
+.metricVal strong {
+	font-size: 16px;
+	font-weight: 800;
+	color: #fff;
+	margin-right: 2px;
+}
+
+.progressBarBg {
+	width: 100%;
+	height: 5px;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 4px;
+	overflow: hidden;
+	margin-top: 2px;
+}
+
+.progressBarFillGold {
+	height: 100%;
+	background: linear-gradient(90deg, #d4af37, #facc15);
+	border-radius: 4px;
+	transition: width 0.3s ease;
+}
+
+.progressBarFillSilver {
+	height: 100%;
+	background: linear-gradient(90deg, #94a3b8, #cbd5e1);
+	border-radius: 4px;
+	transition: width 0.3s ease;
+}
+
+.progressBarFillRed {
+	height: 100%;
+	background: linear-gradient(90deg, #ef4444, #f87171);
+	border-radius: 4px;
+	transition: width 0.3s ease;
+}
+
+.coachCard {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	background: rgba(212, 175, 55, 0.08);
+	border: 1px solid rgba(212, 175, 55, 0.25);
+	padding: 12px 14px;
+	border-radius: 12px;
+}
+
+.coachIcon {
+	color: #d4af37;
+	font-size: 18px;
+	flex-shrink: 0;
+	margin-top: 2px;
+}
+
+.coachText {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.coachTitle {
+	font-size: 12px;
+	font-weight: 700;
+	color: #d4af37;
+}
+
+.coachText p {
+	font-size: 12px;
+	color: #e4e4e7;
+	line-height: 1.4;
+	margin: 0;
+}
+
+/* 2. Embedded DoHabit Habit Tracker */
+.habitTrackerSection {
+	background: #151518;
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.06);
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.habitTrackerHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.habitTrackerTitle h3 {
+	font-size: 15px;
+	font-weight: 800;
+	color: #f7f7f8;
+	margin: 0;
+}
+
+.habitTrackerSub {
+	font-size: 11px;
+	color: #8e8e98;
+}
+
+.quickActionBtn {
+	width: 32px;
+	height: 32px;
+	border-radius: 8px;
+	background: rgba(212, 175, 55, 0.15) !important;
+	color: #d4af37 !important;
+	border: 1px solid rgba(212, 175, 55, 0.3) !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 !important;
+	font-size: 12px;
+}
+
+.quickToolsNav {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 6px;
+}
+
+.toolBtn {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	gap: 6px !important;
+	padding: 8px 4px !important;
+	border-radius: 10px !important;
+	background: #1b1b20 !important;
+	color: #a0a0a8 !important;
+	font-size: 11px !important;
+	font-weight: 600 !important;
+	border: 1px solid rgba(255, 255, 255, 0.05) !important;
+	text-decoration: none !important;
+}
+
+.toolBtn:hover {
+	color: #fff !important;
+	border-color: rgba(212, 175, 55, 0.3) !important;
+}
+
+.emptyHabitsBanner {
+	background: #1a1a20;
+	border: 1px dashed rgba(212, 175, 55, 0.3);
+	border-radius: 12px;
+	padding: 16px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.emptyHabitsBanner p {
+	font-size: 12px;
+	color: #8e8e98;
+	margin: 0;
+}
+
+.seedHabitsBtn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+	color: #000;
+	font-weight: 800;
+	font-size: 12px;
+	padding: 10px 16px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.embeddedHabitListWrapper {
+	margin-top: 4px;
+}

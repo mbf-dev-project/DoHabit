@@ -1,0 +1,542 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding-bottom: 30px;
+}
+
+/* 1. Golden Mayweather Membership Card */
+.cardSection {
+	padding: 0 4px;
+}
+
+.membershipCard {
+	background: linear-gradient(135deg, #1f1f23 0%, #121215 50%, #2a220d 100%);
+	border-radius: 20px;
+	padding: 20px 22px;
+	border: 1px solid rgba(212, 175, 55, 0.45);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+}
+
+.membershipCard::after {
+	content: '';
+	position: absolute;
+	top: -40%;
+	right: -30%;
+	width: 250px;
+	height: 250px;
+	background: radial-gradient(circle, rgba(212, 175, 55, 0.18) 0%, transparent 70%);
+	pointer-events: none;
+}
+
+.cardHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 24px;
+}
+
+.cardBrand {
+	display: flex;
+	flex-direction: column;
+}
+
+.cardGoldText {
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	color: #d4af37;
+	text-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+}
+
+.cardSubText {
+	font-size: 9px;
+	letter-spacing: 3px;
+	color: #bbb;
+	font-weight: 700;
+}
+
+.chip {
+	width: 36px;
+	height: 28px;
+	border-radius: 6px;
+	background: linear-gradient(135deg, #d4af37 0%, #e8ca65 50%, #99750b 100%);
+	position: relative;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.chipLines {
+	position: absolute;
+	inset: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	border-radius: 3px;
+}
+
+.cardNumber {
+	font-size: 20px;
+	font-family: monospace;
+	letter-spacing: 3px;
+	font-weight: 700;
+	color: #f7f7f8;
+	margin-bottom: 24px;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.cardFooter {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.cardHolder,
+.cardExpiry {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.cardLabel {
+	font-size: 9px;
+	color: #a0a0a8;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+.cardValue {
+	font-size: 13px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.cardBadge {
+	display: flex;
+	align-items: center;
+}
+
+.statusActive {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	background: rgba(34, 197, 94, 0.18);
+	color: #4ade80;
+	border: 1px solid rgba(34, 197, 94, 0.4);
+	padding: 4px 10px;
+	border-radius: 20px;
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
+.statusPending {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	background: rgba(234, 179, 8, 0.18);
+	color: #facc15;
+	border: 1px solid rgba(234, 179, 8, 0.4);
+	padding: 4px 10px;
+	border-radius: 20px;
+	font-size: 10px;
+	font-weight: 700;
+}
+
+.cardClubLocation {
+	font-size: 10px;
+	color: rgba(212, 175, 55, 0.7);
+	margin-top: 14px;
+	padding-top: 10px;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	letter-spacing: 0.5px;
+}
+
+/* Common Section */
+.section {
+	background: #151518;
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.06);
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.sectionHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sectionTitle {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.sectionTitle h2 {
+	font-size: 15px;
+	font-weight: 700;
+	color: #f7f7f8;
+	margin: 0;
+}
+
+.titleIcon {
+	color: #d4af37;
+	font-size: 16px;
+}
+
+/* Linking Box */
+.linkingBox {
+	background: #1a1a1f;
+	border-radius: 12px;
+	padding: 12px 14px;
+	border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.linkedNotice {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.successIcon {
+	color: #22c55e;
+	font-size: 24px;
+	flex-shrink: 0;
+}
+
+.linkedTitle {
+	font-size: 13px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.linkedPhone {
+	font-size: 11px;
+	color: #a0a0a8;
+	margin-top: 2px;
+}
+
+.unlinkedNotice p {
+	font-size: 12px;
+	color: #a0a0a8;
+	line-height: 1.4;
+	margin-bottom: 12px;
+}
+
+.linkActionBtn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+	color: #000;
+	font-weight: 700;
+	font-size: 12px;
+	padding: 10px 16px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+/* Metrics Grid */
+.metricsGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.metricCard {
+	background: #1b1b20;
+	border-radius: 12px;
+	padding: 12px 14px;
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.metricLabel {
+	font-size: 11px;
+	color: #8e8e98;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.metricVal {
+	font-size: 18px;
+	font-weight: 800;
+	color: #f7f7f8;
+}
+
+.metricValText {
+	font-size: 14px;
+	font-weight: 700;
+	color: #d4af37;
+}
+
+.metricUnit {
+	font-size: 12px;
+	color: #8e8e98;
+	font-weight: 500;
+}
+
+/* Functional Tests List */
+.addTestBtn {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	background: rgba(212, 175, 55, 0.15);
+	color: #d4af37;
+	border: 1px solid rgba(212, 175, 55, 0.35);
+	padding: 6px 12px;
+	border-radius: 8px;
+	font-size: 12px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.testsList {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.testItem {
+	background: #1a1a20;
+	border-radius: 12px;
+	padding: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.testItemHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.testBadge {
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.testDate {
+	font-size: 11px;
+	color: #8e8e98;
+}
+
+.testResultValues {
+	font-size: 13px;
+	font-weight: 600;
+	color: #d4af37;
+}
+
+.painAlert {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 11px;
+	color: #ef4444;
+	background: rgba(239, 68, 68, 0.1);
+	padding: 4px 8px;
+	border-radius: 6px;
+}
+
+.modNotes {
+	font-size: 11px;
+	color: #a0a0a8;
+	font-style: italic;
+}
+
+.emptyState {
+	font-size: 12px;
+	color: #71717a;
+	text-align: center;
+	padding: 20px;
+}
+
+/* Modals */
+.modalOverlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.75);
+	backdrop-filter: blur(8px);
+	z-index: 100;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.modalBody {
+	background: #18181c;
+	width: 100%;
+	max-width: 500px;
+	border-radius: 20px 20px 0 0;
+	padding: 22px 20px 30px;
+	border-top: 1px solid rgba(212, 175, 55, 0.4);
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	max-height: 85vh;
+	overflow-y: auto;
+}
+
+.modalHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.modalHeader h3 {
+	font-size: 16px;
+	font-weight: 800;
+	color: #f7f7f8;
+	margin: 0;
+}
+
+.modalClose {
+	background: none;
+	border: none;
+	color: #8e8e98;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.modalForm {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.modalDesc {
+	font-size: 12px;
+	color: #a0a0a8;
+	line-height: 1.4;
+}
+
+.inputGroup {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.inputGroup label {
+	font-size: 11px;
+	font-weight: 600;
+	color: #a0a0a8;
+}
+
+.textInput,
+.otpInput,
+.textArea {
+	background: #101014;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 10px;
+	padding: 10px 12px;
+	color: #fff;
+	font-size: 14px;
+	font-family: inherit;
+}
+
+.textInput:focus,
+.otpInput:focus,
+.textArea:focus {
+	outline: none;
+	border-color: #d4af37;
+}
+
+.otpInput {
+	letter-spacing: 6px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.textArea {
+	resize: vertical;
+	min-height: 60px;
+}
+
+.dynamicFields {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	background: rgba(255, 255, 255, 0.02);
+	padding: 12px;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.checkboxGroup {
+	display: flex;
+	align-items: center;
+}
+
+.checkboxLabel {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+	color: #e4e4e7;
+	cursor: pointer;
+}
+
+.otpNotice {
+	font-size: 12px;
+	color: #a0a0a8;
+	line-height: 1.4;
+}
+
+.mockCodeBanner {
+	margin-top: 6px;
+	padding: 8px;
+	background: rgba(212, 175, 55, 0.15);
+	border: 1px dashed #d4af37;
+	border-radius: 8px;
+	color: #facc15;
+	font-size: 11px;
+}
+
+.securityPills {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.securityPills span {
+	font-size: 10px;
+	color: #8e8e98;
+	background: rgba(255, 255, 255, 0.04);
+	padding: 3px 8px;
+	border-radius: 6px;
+}
+
+.errorText {
+	font-size: 11px;
+	color: #ef4444;
+	font-weight: 600;
+}
+
+.modalSubmitBtn {
+	background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+	color: #000;
+	font-weight: 800;
+	font-size: 14px;
+	padding: 12px;
+	border-radius: 12px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+}
+
+.modalSubmitBtn:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}

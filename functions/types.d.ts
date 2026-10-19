@@ -3,6 +3,7 @@
 // Runtime types generated with workerd@1.20260625.1 2026-06-18
 interface __BaseEnv_Env {
 	DB: D1Database;
+	TELEGRAM_BOT_TOKEN?: string;
 }
 declare namespace Cloudflare {
 	interface Env extends __BaseEnv_Env { }

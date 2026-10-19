@@ -1,31 +1,25 @@
 // Config docs: https://developers.cloudflare.com/pages/functions/wrangler-configuration/
 {
-	"name": "dohabit",
+	"name": "mayweather-habits",
 	"pages_build_output_dir": "dist",
 	"compatibility_date": "2026-06-18",
 	"d1_databases": [
 		{
-			"database_id": "7f746e0a-c6f9-4211-bd8e-2ea4c26c4d52",
 			"binding": "DB",
-			"database_name": "DB"
+			"database_name": "mayweather-habits-db",
+			"database_id": "9918779e-67be-4812-b68a-25e8756409b0",
+			"migrations_dir": "migrations"
 		}
 	],
-	"vars": {
-		"NOWPAYMENTS_API_URL": "https://api.nowpayments.io/v1",
-		"NOWPAYMENTS_IPN_URL": "https://dohabit.app/api/webhooks/nowpayments"
-	},
 	"env": {
 		"production": {
-			"compatibility_date": "2026-06-16",
-			"vars": {
-				"NOWPAYMENTS_API_URL": "https://api.nowpayments.io/v1",
-				"NOWPAYMENTS_IPN_URL": "https://dohabit.app/api/webhooks/nowpayments"
-			},
+			"compatibility_date": "2026-06-18",
 			"d1_databases": [
 				{
-					"database_id": "95bfddff-da37-442e-a736-127e685f0d0b",
 					"binding": "DB",
-					"database_name": "DB"
+					"database_name": "mayweather-habits-db",
+					"database_id": "9918779e-67be-4812-b68a-25e8756409b0",
+					"migrations_dir": "migrations"
 				}
 			]
 		}

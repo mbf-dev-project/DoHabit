@@ -1,0 +1,138 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 14px 16px 8px;
+	background: linear-gradient(180deg, rgba(20, 20, 22, 0.98) 0%, rgba(12, 12, 14, 0.95) 100%);
+	border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+	position: sticky;
+	top: 0;
+	z-index: 40;
+	backdrop-filter: blur(12px);
+}
+
+.topRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.badge {
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+	background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+	color: #000;
+	font-weight: 900;
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.5px;
+	box-shadow: 0 2px 10px rgba(212, 175, 55, 0.35);
+}
+
+.title {
+	font-size: 17px;
+	font-weight: 900;
+	letter-spacing: 1.5px;
+	color: #f7f7f8;
+	line-height: 1.1;
+	margin: 0;
+	font-family: inherit;
+}
+
+.subtitle {
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 2.2px;
+	color: #d4af37;
+	text-transform: uppercase;
+}
+
+.headerActions {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.addHabitBtn {
+	width: 36px;
+	height: 36px;
+	border-radius: 10px;
+	background: rgba(212, 175, 55, 0.15) !important;
+	border: 1px solid rgba(212, 175, 55, 0.4) !important;
+	color: #d4af37 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 !important;
+	font-size: 14px;
+	transition: all 0.2s ease;
+}
+
+.addHabitBtn:hover {
+	background: rgba(212, 175, 55, 0.3) !important;
+	transform: scale(1.05);
+}
+
+.tabsNav {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 6px;
+	background: rgba(255, 255, 255, 0.04);
+	padding: 4px;
+	border-radius: 14px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tabBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	padding: 8px 10px;
+	border-radius: 10px;
+	border: none;
+	background: transparent;
+	color: #a0a0a8;
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	position: relative;
+	white-space: nowrap;
+}
+
+.tabBtn:hover {
+	color: #ffffff;
+}
+
+.tabActive {
+	background: #1a1a1e;
+	color: #d4af37;
+	font-weight: 700;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+	border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.tabIcon {
+	font-size: 13px;
+}
+
+.activeDot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #22c55e;
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	box-shadow: 0 0 6px #22c55e;
+}
